@@ -66,7 +66,7 @@ class HigherOrderFunctions extends React.Component {
   filterByAge = (upper, lower) => {
     const data = this.state.userData;
     const usersOfAge = data.filter(
-      (item) => item.age > upper && item.age <= 50,
+      (item) => item.age > upper && item.age <= lower,
     );
     const filteredByAge = usersOfAge.map((item) => (
       <React.Fragment key={item.id}>
